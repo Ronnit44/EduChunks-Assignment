@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editor</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: Arial;
+    }
+
+    .toolbar {
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-right: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      background: white;
+    }
+
+    .active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    #sync-indicator {
+      color: green;
+      opacity: 0;
+      transition: opacity 0.3s;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    #editor {
+      border: 1px solid #ccc;
+      min-height: 250px;
+      padding: 10px;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="sync-indicator">
+  ✓ Synced
+</div>
+
+<div class="toolbar">
+  <button id="bold">Bold</button>
+  <button id="italic">Italic</button>
+  <button id="strike">Strike</button>
+</div>
+
+<div
+  id="editor"
+  contenteditable="true"
+>
+Type something here...
+</div>
+
+<script src="editor.js"></script>
+
+</body>
+</html>

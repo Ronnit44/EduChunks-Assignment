@@ -1,0 +1,25 @@
+.container {
+  padding: 20px;
+}
+
+.frames {
+  display: flex;
+  gap: 20px;
+}
+
+iframe {
+  width: 50%;
+  height: 400px;
+  border: 2px solid #ccc;
+}
+.log-panel {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.log-panel h2 {
+  margin-top: 0;
+}
